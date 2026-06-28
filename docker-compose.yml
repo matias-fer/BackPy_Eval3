@@ -1,0 +1,28 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql_products
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=products_db
+    volumes:
+      - mysql_products_data:/var/lib/mysql
+    
+  app:
+    build: .
+    container_name: app_products
+    restart: on-failure
+    depends_on:
+      - mysql
+    ports:
+      - "8082:8082"
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_NAME=products_db
+      - PORT=8082
+
+volumes:
+  mysql_products_data:
