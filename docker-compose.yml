@@ -17,8 +17,10 @@ services:
     ports:
       - "8082:8082"
     environment:
-      -SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/productos_db?createDatabaseIfNotExist=true
-      -SPRING_DATASOURCE_USERNAME=root
-      -SPRING_DATASOURCE_PASSWORD=root
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_NAME=products_db
 volumes:
   mysql_products_data:
