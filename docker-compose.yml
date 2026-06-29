@@ -22,7 +22,5 @@ services:
       - DB_USER=root
       - DB_PASSWORD=root
       - DB_NAME=products_db
-      - PORT=8082
-
 volumes:
   mysql_products_data:
