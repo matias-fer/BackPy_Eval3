@@ -52,7 +52,7 @@ def init_db():
             print("Seeding initial products...")
             initial_products = [
                 ("Laptop HP Pavilion", "Laptop de 15.6 pulgadas, Intel Core i5, 8GB RAM, 256GB SSD", 899.99, 15, "💻"),
-                ("Samsung Galaxy", "Samsung Galaxy S23, 128GB, cámara de 50MP, 5G", 799.99, 25, "📱"),
+                ("Iphone", "Samsung Galaxy S23, 128GB, cámara de 50MP, 5G", 799.99, 25, "📱"),
                 ("Auriculares Sony WH-1000XM4", "Auriculares inalámbricos con cancelación de ruido", 349.99, 30, "🎧"),
                 ("Tablet iPad Air", "Apple iPad Air 5ta generación, 64GB, Wi-Fi", 599.99, 20, "📲"),
                 ("Smartwatch Apple Watch", "Apple Watch Series 8, GPS, 45mm", 449.99, 18, "⌚"),
