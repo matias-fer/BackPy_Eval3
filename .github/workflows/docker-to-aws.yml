@@ -30,4 +30,4 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ steps.login-ecr.outputs.registry }}/ms.backpy.products:latest
+            ${{ steps.login-ecr.outputs.registry }}/ms.backpy.products:latest2
